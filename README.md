@@ -1,14 +1,15 @@
  
-  ## Project Title :
+  # Project Title :
 
   README GENERATOR
 
-  ## Description :
+  # Description :
 
   This is a  README.md Generator which helps to create any  README page in Github by using User input .
 
 
-  # Table Of Contents
+  # Table Of Contents :
+
   * [Installation](#Installation)
   * [Usage](#Usage)
   * [Contributor](#Contributor)
@@ -40,7 +41,7 @@
 
  Tested
 
-  ### Questions
+  # Questions
 
   If you have any question 
      Contact me :
