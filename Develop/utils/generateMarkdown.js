@@ -1,10 +1,9 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  console.log( `
+  return `
   
-  ## Project Title :
-
-  ${data.title}
+  
+  ##${data.title}
 
   ## Description :
 
@@ -20,15 +19,18 @@ function generateMarkdown(data) {
   
   # Installation :
 
-  ${data.Installation}
+  To install this app follow this :  ${data.Installation}
 
   # Usage :
 
   ${data.Usage}
+  ![screen-shot](../images/screenshot.JPG)
 
   # Contributor :
-
+   
+  Email: ${data.Email}
   ${data.Contributor}
+
 
   # License :
 
@@ -38,8 +40,12 @@ function generateMarkdown(data) {
 
   ${data.Test}
 
-  ### This Project "${data.title}" Made by "${data.Name}"
-`)
+  # Questions :
+
+  If you have any question , contact me : ${data.Email}
+
+  # This Project "${data.title}" Made by "${data.userName}"
+`
 }
 
 module.exports = generateMarkdown;

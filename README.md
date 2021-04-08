@@ -5,7 +5,7 @@
 
   # Description :
 
-  This is a  README.md Generator which helps to create any  README page in Github by using User input .
+  This application , Allows user to generate Readme , by getting prompt in command line base on node.js .
 
 
   # Table Of Contents :
@@ -16,13 +16,17 @@
   * [License](#License)
   * [Test](#Test)
   
-  
+  # Walkthrough: 
+
+ 
+  [Video Link](https://user-images.githubusercontent.com/70945176/114083966-4586f480-9875-11eb-988f-1276d0b2afbf.mp4)
+
   # Installation :
 
   Clone or Download the repository 
   Open file in VScode => Open Terminal
-  Make sure you are in Develop Folder in your Terminal
-  Type npm install
+  run : cd Develop 
+  then run :  node index.js
 
   # Usage :
 

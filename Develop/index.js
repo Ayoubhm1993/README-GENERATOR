@@ -57,19 +57,17 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName,generateMarkdown(data),(err)=>{
-        if (err)throw err;
+        if (err){console.log('error', err)};
     })
 };
 
-function init(){ inquirer.prompt(questions)
+function init(){
+     inquirer.prompt(questions)
     .then((data) => {
         
-        return generateMarkdown(data);
+        writeToFile('./dist/README.md', data)
         console.log(data);
-    }).then(data =>{
-        writeToFile('../README.md',data);
-        console.log("SAVED")
-    }).catch(err =>{console.log(err)})
+    }).then(()=> console.log('README Success')).catch(err =>{console.log(err)})
 
 };
 
